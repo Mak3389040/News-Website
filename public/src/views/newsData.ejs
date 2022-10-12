@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title><%- article.title.rendered   %></title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="header__logo"><a href="/">News Website</a></div>
+  <%- include('./partials/search.ejs')   %>
+  </header>
+  <div class="wrapper">
+
+
+<div class="wrapper2">
+
+
+<a href="/">&larr; Back</a><br><br>
+  <img class="article_img" src="<%- article.thumbnail_url %>" alt="<%- article.title.rendered   %>">
+
+  <h4><%- article.title.rendered   %></h4>
+  <p><%- article.content.rendered %></p>
+</a>
+
+
+</div>
+</div>
+</body>
+
+</html>
